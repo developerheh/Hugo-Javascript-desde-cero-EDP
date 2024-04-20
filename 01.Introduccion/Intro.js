@@ -10,8 +10,8 @@
 /* TITULO - NO MODIFICAR*/ document.write('<div class="titulo"><p>Ejercicio de Ejemplo - Resultado:</p></div>')
 // En una tienda, se vendieron 5 camisetas en un día y luego se vendieron otras 3 camisetas. ¿Cuántas camisetas se vendieron en total?
 // Tu codigo 👇:
-    document.write("Se vendieron en total: ")
-    document.write(5+3)
+    document.write("Se vendieron en total: ");
+    document.write(5+3);
 //_________________________________________
 
 /* TITULO - NO MODIFICAR*/ document.write('<br><br><div class="titulo"><p>Ejercicio N° 1 - Promedio del Estudiante | Resultado:</p></div>')
@@ -20,13 +20,24 @@
 // Tu codigo 👇:
 
 
+    // document.write("El promedio que obtiene un alumno cuyas calificaciones son; 8 ;7 y 9 es:    ");
+    // document.write((8+7+9)/3);
+
+
+// Otra forma es con comillas simples y usando operaciones con el numeral pesos "$";
+
+document.write("");
+document.write(`El promedio es   ${(8+7+9)/3}`);
+
+
 //_________________________________________
 
 /* TITULO - NO MODIFICAR*/ document.write('<br><br><div class="titulo"><p>Ejercicio N° 2 - Longitud de una cadena | Resultado:</p></div>')
 // Ejercicio N° 2:
 // Juan quiere saber cuántas letras tiene su nombre. ¿Cuál es la longitud del nombre "Juan"?
 // Tu codigo 👇:
-
+    document.write("La cantidad de caracteres del nombre Juan es :");
+    document.write("juan".length);
 
 //_________________________________________
 
@@ -34,6 +45,11 @@
 // Ejercicio N° 3:
 // Si una distancia se mide en metros y se desea conocer su equivalencia en pies, donde 1 metro equivale a 3.281 pies, ¿cuántos pies son 10 metros?
 // Tu codigo 👇:
+
+document.write("10 metros son : ",(10 * 3.281)," ","pies");
+
+
+
 
 
 //_________________________________________
@@ -43,6 +59,9 @@
 // Un producto tiene un precio original de $100. Si hay un descuento del 20%, ¿cuál es el precio final del producto después del descuento?
 // Tu codigo 👇:
 
+
+document.write("Para un producto que vale 100 pesos, si se le hace un descuento del 20%, su precio final es de : ");
+document.write(100 - ((20/100)*100)," ","pesos.");
 
 //_________________________________________
 
@@ -54,6 +73,16 @@
 // Pidele al usuario que ingrese su Nombre y Apellido - luego devuelve por consola un saludo de bienvenida concatenando su nombre y apellido.
 // Ejemplo: Lionel Messi -> Bienvenido Lionel Messi 
 // Tu codigo 👇:
+
+let nombre = "Hugo";
+let apellido = "Herrera";
+console.log("Bienvenido "+nombre+" "+apellido);
+
+//Uso de la función prompt() y alert()
+
+ let nombreApellido = prompt("Ingrese su Nombre y Apellido");
+ alert("Bienvenido"+" "+nombreApellido);
+
 
 
 //_________________________________________

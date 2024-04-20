@@ -3,12 +3,13 @@
 // Crea una variable con el nombre "num", este debe guardar un tipo dato numérico.
 // Tu codigo 👇:
 
-//_________________________________________
+
+//__let num =0; console.log(num);_______________________________________
 
 // Crea una variable con el nombre "cadena", este debe guardar un tipo dato string.
 // Tu codigo 👇:
 
-//_________________________________________
+//____let cadena =""; console.log(num);_____________________________________
 
 // Crea una variable con el nombre "logico", este debe guardar un tipo dato booleano.
 // Tu codigo 👇:
