@@ -63,6 +63,9 @@ document.write("10 metros son : ",(10 * 3.281)," ","pies");
 document.write("Para un producto que vale 100 pesos, si se le hace un descuento del 20%, su precio final es de : ");
 document.write(100 - ((20/100)*100)," ","pesos.");
 
+
+
+
 //_________________________________________
 
 
@@ -81,7 +84,10 @@ console.log("Bienvenido "+nombre+" "+apellido);
 //Uso de la función prompt() y alert()
 
  let nombreApellido = prompt("Ingrese su Nombre y Apellido");
- alert("Bienvenido"+" "+nombreApellido);
+ let ingresoConvertidoAnumero= parseInt(prompt("Ingrese edad"));
+ alert("Bienvenido"+" "+nombreApellido+ " "+"tenes mucha cancha para jugar con" + " " +ingresoConvertidoAnumero);
+
+//declarar y usar un código como función
 
 
 
