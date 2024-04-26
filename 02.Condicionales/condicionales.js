@@ -5,6 +5,13 @@
 // caso contrario se le indica que no puede inscribirse y la razón.
 // Tu codigo 👇:
 
+let edad =prompt("Ingrese su edad");
+numEdad = parseInt (edad);
+if(numEdad >= 18){
+        alert("Usted esta apto a incribirse")
+
+}else {alert("No cumple con los requisitos de la edad mínima")}
+
 
 //_________________________________________
 
@@ -18,6 +25,16 @@
 // Calificación menor a 60: "Insuficiente"
 // Tu codigo 👇:
 
+let calificacion =parseInt(prompt("Ingrese su calificación de 0 a 100 %"));
+if(calificacion>=90){
+          alert("Excelente");
+}else if (70<=calificacion||calificacion>=89){
+        alert ("Bueno");
+}else if (60<=calificacion||calificacion>=69){
+        alert ("Suficiente");
+}else if (calificacion<60){
+        alert ("Insuficiente");
+}    
 
 //_________________________________________
 
@@ -27,6 +44,10 @@
 // Escribe un programa que solicite al usuario ingresar un número entero y luego determine si es par o impar.
 // Tu codigo 👇:
 
+let nro =parseInt(prompt("Ingrese un número"));
+if((nro % 2)== 0){
+        alert("Usted ingresó un número par");     
+}else {alert("Es impar");}
 
 //_________________________________________
 
@@ -37,7 +58,32 @@
 // Por ejemplo, si el usuario ingresa 1, el programa debe imprimir "Lunes".
 // Tu codigo 👇:
 
-
+let dia = parseInt(prompt("Ingrese un número, de acuerdo al orden correlativo con la semana: 1-lunes, 2-martes, 3-miércoles, 4-jueves, 5-viernes, 6-sábado, 7-domingo"));
+switch (dia) {
+        case 1:
+                alert("lunes");
+                break;
+        case 2:
+                alert("martes");
+                break;
+        case 3:
+                alert("miércoles");
+                break;
+        case 4:
+                alert("jueves");
+                break;
+        case 5:
+                alert("viernes");
+                break;
+        case 6:
+                alert("sábado");
+                break;
+        case 7:
+                alert("domingo");
+                break;
+        default:
+                alert("ingresó un número no válido");
+}
 //_________________________________________
 
 
@@ -47,6 +93,14 @@
 // Si la antigüedad es mayor o igual a 5 años, y el salario es menor a $500,
 // el programa debe imprimir un mensaje que indique que el empleado es elegible para una bonificación del 10% de su salario actual.
 // Tu codigo 👇:
+
+
+let salario =parseInt(prompt("Ingrese su salario actual"));
+let antiguedad =parseInt(prompt("Ingrese su antigüedad en el trabajo"));
+if (antiguedad>=5&&salario<500){
+        alert("Usted es elegible para una bonificación del 10% de su salario actual");
+}else{alert("su salario no presentará modificaciones por ahora")}
+
 
 
 //_________________________________________
@@ -59,7 +113,18 @@
 // Mayor de 65 años: "Senior"
 // Tu codigo 👇:
 
-
+let edadUsu =parseInt(prompt("Ingrese su edad"));
+switch (true) {
+        case (edadUsu<18):
+                alert("Menor de edad");
+                break;
+        case (edadUsu<66):
+                alert("Adulto");
+                break;
+        default:
+                alert("Senior");
+                break;
+}
 //_________________________________________
 
 
