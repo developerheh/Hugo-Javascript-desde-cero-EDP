@@ -11,20 +11,22 @@ console.log(num);
 
 // Crea una variable con el nombre "cadena", este debe guardar un tipo dato string.
 // Tu codigo 👇:
+let cadena ="";
+console.log(cadena);
 
 //____let cadena =""; console.log(num);_____________________________________
 
 // Crea una variable con el nombre "logico", este debe guardar un tipo dato booleano.
 // Tu codigo 👇:
-let cadena ="";
-console.log(cadena);
+let logico =true;
+console.log(logico);
 
 //_________________________________________
 
 // Crea una variable con el nombre "vacio", este debe guardar un tipo dato null.
 // Tu codigo 👇:
 
-let vacio;
+let vacio= null;
 console.log(vacio);
 
 //_________________________________________

@@ -20,8 +20,8 @@
 // Tu codigo 👇:
 
 
-    // document.write("El promedio que obtiene un alumno cuyas calificaciones son; 8 ;7 y 9 es:    ");
-    // document.write((8+7+9)/3);
+    document.write("El promedio que obtiene un alumno cuyas calificaciones son; 8 ;7 y 9 es:    ");
+    document.write((8+7+9)/3);
 
 
 // Otra forma es con comillas simples y usando operaciones con el numeral pesos "$";
