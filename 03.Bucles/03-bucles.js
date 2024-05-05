@@ -100,12 +100,12 @@ function invertirCadena(cadena) {
 //Ejemplo: 'Hola' -> devolver 'aloH'
 //Tu codigo:👇
 let cad = cadena;
-let invCad =[];
+let invCad ="";
 let anterior = (cad.length -1);
 for (let i = anterior; i >= 0; i--) {
-     invCad= cad[i];
-     console.log(invCad);
+     invCad += cad[i];
 }
+console.log(invCad);
 }
   
 module.exports = {

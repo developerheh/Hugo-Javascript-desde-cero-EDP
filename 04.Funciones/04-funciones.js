@@ -4,6 +4,9 @@
 //Debes crear un funcion que retorne un mensaje de bienvenida con nombre y apellido de la persona
 //Ejemplo "Bienvenido Leonardo Avila" -> IMPORTANTE la funcion tiene que llamarse 'bienvenida'
 //Tu código:
+const bienvenida = (nombre,apellido)=>{
+    return `Bienvenido ${nombre} ${apellido}`;
+}
 
 
 
@@ -11,6 +14,24 @@
 // Crea una funcion el cual cumpla la funcion de una calculadora.. tiene que recibir 3 parametros num1, operador y num2
 // IMPORTANTE -> la funcion debe llamarse 'calc'
 // Tu código:
+
+const calc = (num1, operador, num2) =>{
+
+    let a = num1;
+    let b = num2;
+
+    if (operador == "+"){
+        return (a + b);
+    }else if (operador == "-"){
+        return (a - b);
+    }else if (operador == "*"){
+        return (a * b);
+    }else if (operador == "/"){
+        return (a / b);
+    }else if (operador == "%"){
+        return (a % b);
+    }
+}
 
 
 
@@ -25,7 +46,25 @@
 // IMPORTANTE -> la funcion debe llamarse 'temp'    
 // Tu código:
 
+const temp = (tMin,tMax,PLluvia) =>{
 
+    if (tMax<15){
+        if (PLluvia>50){
+            return "Es recomendable salir con abrigo, recomendable un paraguas";
+        }
+        return "Es recomendable salir con abrigo";
+    }else if (((tMin>=16) && tMax<26)){
+        if (PLluvia>50){
+            return "El día está lindo, recomendable un paraguas";
+        }
+        return console.log("El día está lindo");
+    }else if ((tMin>25)||(tMax>35)){
+        if (PLluvia>50){
+            return console.log("El día estará caluroso y es recomendable un paragüas")
+        }
+        return console.log("El día va a estar caluroso");
+    }
+}
 
 /**********************************************************************************/
 
@@ -34,6 +73,14 @@
 // IMPORTANTE -> la funcion debe llamarse 'checkPassword'
 // Tu código:
 
+const checkPassword = (contrasegna) =>{
+    let pass = contrasegna;
+    if (pass.length>=8){
+        return "La contraseña es segura";
+    }else{
+        return "La contraseña es insegura";
+    }
+}
 
 
 
@@ -42,7 +89,15 @@
 // IMPORTANTE -> la funcion debe llamarse 'stringInverso'
 // Tu código:
 
-
+const stringInverso = (cadena) =>{
+    let cad = cadena;
+    let invCad ="";
+    let anterior = (cad.length -1);
+for (let i = anterior; i >= 0; i--) {
+     invCad += cad[i];
+  } 
+  return invCad;
+}
 
 /**********************************************************************************/
 
