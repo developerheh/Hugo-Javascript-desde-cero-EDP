@@ -1,7 +1,8 @@
 function primerElemento(arg){
     //dado el array pasado por parametro, tendras que devolver el primer elemento
     // tu código:
-
+    let primerElemento = arg.shift(0);
+    return console.log(primerElemento);
 }
 
 function ultimoElemento(arg){

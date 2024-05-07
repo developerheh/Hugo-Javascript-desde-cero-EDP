@@ -105,7 +105,7 @@ function myFunction() {
 
 ```jsx
 
-// Respuesta
+// Respuesta: muestra no definida.
 
 ```
 
@@ -143,14 +143,15 @@ function outerFunction() {
 
 }
 
-innerFunction();
+innerFunction();//Muestra error; Uncaught ReferenceError: innerFunction is not defined
 outerFunction();
 ```
 
 ```jsx
 
 // Respuesta CASO 1:
-
+No muestra problemas
 // Respuesta CASO 2:
+Hay error de acceso a una funcion que no esta en la visibilidad correcta!
 
 ```
