@@ -1,19 +1,25 @@
 function primerElemento(arg){
     //dado el array pasado por parametro, tendras que devolver el primer elemento
     // tu código:
-    let primerElemento = arg.shift(0);
-    return console.log(primerElemento);
+    let primerElemento = arg[0];
+    return primerElemento;
 }
 
 function ultimoElemento(arg){
     //dado el array pasado por parametro, tendras que devolver el ultimo elemento
     // tu código aqui:
-
+    let subIndiceUltimoElemento = arg.length -1 ;
+    console.log(subIndiceUltimoElemento);
+    let ultimoElemento = arg [subIndiceUltimoElemento];
+    return ultimoElemento;
 }
 
 function nuevoArray(arg){
     //dado el array pasado por parametro retorna su longitud
     // tu código aqui:
+    let longitud = arg.length;
+
+    return longitud;
 
 }
 
@@ -22,7 +28,14 @@ function changeArray(arr){
     //el ultimo elemento por 'array'
     //retorna el nuevo valor
     // tu código aqui:
+    let primerElemento = "Aprendiendo";
+    let ultimoElemento = "array";
+    let posiciónUltimoElemento = (arr.length - 1);
 
+    arr[0]= primerElemento;
+    arr[posiciónUltimoElemento] = ultimoElemento;
+
+    return arr;
 }
 
 function primerasCondicionales(arg){
@@ -32,6 +45,16 @@ function primerasCondicionales(arg){
     // longitud de array menor que 3 retornar: 'Este array es menor a 3'
     // longitud de array igual a 0 retornar: 'Este array no contiene elementos'
     // tu código aqui:
+    let longitud = arg.length;
+    if (longitud>3){
+        return 'Este array es mayor a 3';
+    } else if (longitud == 3){
+        return 'Este array es igual a 3';
+    }else if (longitud < 3 && longitud != 0){
+        return 'Este array es menor a 3';
+    }else{
+        return 'Este array no contiene elementos';
+    }
     
 }
 
@@ -39,20 +62,39 @@ function sumandoEnUno(arg){
     // dado el array de numeros enteros pasado por parametro, a cada elemento del array
     // tienes que sumarle 1.. ejemplo: [4 , 5, 6] -> [5 , 6, 7] 
     // tu código aqui:
-
-}
+    // Example 1: Loop through an array and log the value of each element
+    arg.forEach((value, index, arr) => {
+        arr[index] = value +1; // suma en uno cada valor original del array
+      });
+     return arg;
+}// Nota este ejercicio se puede siemplifica aún mas usando el método "map" de los arrays!!
 
 function valorMaximo(arr){
     //Se pasa un array de enteros, tendras que iterar por cada elemeto del array y encontrar el valor más alto y devolverlo
     //ejemplo -> [1 , 5, 4, 10, 99 ,2, 42, 3] - deberia devolver 99
     // Tu codigo:
+    let alto = -Infinity;
+    arr.forEach((value) => {
 
+        if (value > alto || value == alto) {
+            alto = value;
+        }
+      });
+      return alto;
 }
 
 function valorMinimo(arr){
     //Se pasa un array de enteros, tendras que iterar por cada elemeto del array y encontrar el valor más bajo y devolverlo
     //ejemplo -> [ 5, 4, 10, 99 ,2, 42, 3] - deberia devolver 2
     // Tu codigo:
+    let bajo = Infinity;
+    arr.forEach((value) => {
+
+        if (value < bajo || value == bajo) {
+            bajo = value;
+        }
+      });
+      return bajo;
 
 }
 
@@ -89,6 +131,7 @@ function matrizTranspuesta(matriz){
     //Tu codigo:
 
 }
+
 
 module.exports = {
     nuevoArray,
