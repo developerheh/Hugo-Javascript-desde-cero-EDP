@@ -2,37 +2,47 @@
 // Completa el siguiente objeto 'alumnos' que tenga como primera propiedad nombre, segunda propiedad apellido, tercera edad y cuarta examen
 // nombre y apellido deben tener como valor un string, edad un entero y examen un booleano.
 // Tu código:
-let alumnos = {}
+let alumnos = {
+    nombre: "",
+    apellido: "",
+    edad: 0,
+    examen: true
+}
 
-
-function datosObj(obj){
+function cambiandoPropiedades(obj) {
     // Pasado el objeto por paramentros compuesto de la siguiente manera : 
-    //{ nombre: Leonardo, apellido: Avila }
+    //{ nombre: "Pablo", apellido: "Perez", edad: 25 }
+    // Agregar una propiedad 'nacionalidad' con el valor de 'Argentina'
+    // tu código aqui:
+    obj[`nacionalidad`] = "Argentina";
+    return (obj);
+}
+
+function datosObj(obj) {
+    // Pasado el objeto por paramentros compuesto de la siguiente manera : 
+    //{ nombre: "Leonardo", apellido: "Avila" }
     // obtener los valeres nombre y apellido y dar un mensaje de bienvenida 
     // 'Bienvenido Leonardo Avila' 
     // tu código aqui:
-
-}
-
-function cambiandoPropiedades(obj){
-    // Pasado el objeto por paramentros compuesto de la siguiente manera : 
-    //{ nombre: Pablo, apellido: Perez, edad: 25 }
-    // Agregar una propiedad 'nacionalidad' con el valor de 'Argentina'
-    // tu código aqui:
-
+    return "Bienvenido " + obj.nombre + " " + obj.apellido;
 }
 
 function eliminarPropiedad(objeto, propiedad) {
     // Esta funcion recibe por parametros un objeto y una propiedad del mismo objeto.
     // tendrás que eliminar esa propiedad del objeto y devolver el objeto
     // Tu código:
-
+    delete objeto[propiedad];
+    return objeto;
 }
 
 function contieneEmail(user) {
     // Devuelve true si el user contiene la propiedad de 'email', si no contiene devuelve false
     // Tu código:
-
+    if (user["email"]){
+        return true;
+    }else {
+        return false;
+    }
 }
 
 function verificarPassword(user) {
@@ -40,6 +50,14 @@ function verificarPassword(user) {
     // comprueba si el valor de esta propiedad tiene un longitud mayor o igual a 8 caracteres
     // si cumple devolver true, caso contrario devolver 'Por favor, pon una contraseña más segura'
     // Tu código:
+    
+    const longitud = user["password"].length;
+    //console.log (longitud);
+    if (longitud > 8 || longitud == 8){
+        return true;
+    }else {
+        return "Porfavor, pon una contraseña más segura";
+    }
 
 }
 
@@ -50,6 +68,16 @@ function permisosDeEntrada(personas) {
     // el nuevo array debe contener unicamente el nombre de las personas
     // tu código:
 
+let count =-1;
+let arrInter = [];
+    for (let i = 0; i < personas.length; i++) {
+        if (personas[i]["edad"]>= 18 && personas[i]["entrada"]){
+            count++;
+            arrInter[count]=personas[i]["nombre"];
+        }
+    }
+return arrInter;
+
 }
 
 //Crea un objeto "libro" con propiedades como título, autor y año de publicación. 
@@ -57,12 +85,16 @@ function permisosDeEntrada(personas) {
 //devuelva la información del libro de la siguiente manera: "El libro {título}, escrito por {autor} , fue publicado en {añoPublicación}".
 //tu codigo:
 
-let libro = {};
-  
-  // Función para mostrar la información del libro
-  function mostrarInformacionLibro(libro) {
+let libro = {
+    título : "Fisica I",
+    autor : "Richard Feynman",
+    añoPublicación : 1971
+};
 
-  }
+// Función para mostrar la información del libro
+function mostrarInformacionLibro(libro) {
+    return ( `El libro ${libro.título}, escrito por ${libro.autor} , fue publicado en ${libro.añoPublicación}.` );
+}
 
 module.exports = {
     alumnos,
@@ -74,4 +106,4 @@ module.exports = {
     permisosDeEntrada,
     libro,
     mostrarInformacionLibro
-  };
+};

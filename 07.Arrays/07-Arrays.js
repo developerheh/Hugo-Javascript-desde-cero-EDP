@@ -231,7 +231,11 @@ function dosEnUno(arr1, arr2){
    return resultadoConcatenado;
 
 }
-
+/**
+ * 
+ * @param {matriz} matriz 
+ * @returns la matriz transpuesta.
+ */
 function matrizTranspuesta(matriz) {
     //Escribe una función que reciba una matriz (array de arrays) y devuelva la matriz transpuesta, es decir, intercambiando filas por columnas.
     //Tu codigo:
@@ -257,7 +261,6 @@ function matrizTranspuesta(matriz) {
     return matrizTranspuesta;
 
 }
-
 
 module.exports = {
     nuevoArray,
