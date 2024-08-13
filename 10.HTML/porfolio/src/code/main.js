@@ -1,0 +1,3 @@
+alert("You can!");
+
+document.
